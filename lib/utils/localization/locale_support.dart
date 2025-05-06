@@ -6,7 +6,7 @@ extension LocaleSupport on BuildContext {
     AppLocalizations? locale =  AppLocalizations.of(this);
 
     if(locale == null) {
-      throw Exception('Locale is requested before Localisation intitialised');
+      throw Exception('Locale is requested before Localisation intitialised!');
     }
 
     return locale;
