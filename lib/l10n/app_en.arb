@@ -1,0 +1,14 @@
+{
+  "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "rememberMe": "Remember Me",
+  "forgotPassword": "Forget password",
+  "signIn": "Sign In",
+  "createAccount": "Create Account",
+  "loginSuccess": "Login successfully",
+  "loginFailed": "Login failed",
+  "welcomeBackToTheApp": "Welcome back",
+  "requiredUsername": "Please enter account",
+  "requiredPassword": "Please enter a password"
+}

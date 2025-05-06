@@ -1,0 +1,14 @@
+{
+  "login": "Đăng nhập",
+  "username": "Tài khoản",
+  "password": "Mật khẩu",
+  "rememberMe": "Nhớ mật khẩu",
+  "forgotPassword": "Quên mật khẩu",
+  "signIn": "Đăng nhập",
+  "createAccount": "Tạo tài khoản",
+  "loginSuccess": "Đăng nhập thành công",
+  "loginFailed": "Đăng nhập thất bại",
+  "welcomeBackToTheApp": "Chào mừng trở lại",
+  "requiredUsername": "Vui lòng nhập tài khoản",
+  "requiredPassword": "Vui lòng nhập mật khẩu"
+}

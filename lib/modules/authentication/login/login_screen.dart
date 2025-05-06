@@ -7,6 +7,7 @@ import 'package:ahmoma_app/utils/constants/image_string.dart';
 
 import 'package:ahmoma_app/utils/helpers/function_helper.dart';
 import 'package:ahmoma_app/utils/helpers/spacing_style_helper.dart';
+import 'package:ahmoma_app/utils/localization/locale_support.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -60,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is LoginSuccess) {
-          context.showSuccess('context.locale.loginSuccess');
+          context.showSuccess(context.locale.loginSuccess);
           Navigator.pushNamedAndRemoveUntil(
             context,
             AppRoutes.main,
@@ -106,12 +107,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         //   height: 150,
                         // ),
                         Text(
-                          'context.locale.login',
+                          context.locale.login,
                           style: Theme.of(context).textTheme.headlineMedium,
                         ),
                         const SizedBox(height: AppSizes.sm),
                         Text(
-                          'context.locale.welcomeBackToTheApp',
+                          context.locale.welcomeBackToTheApp,
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
@@ -130,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               textInputAction: TextInputAction.next,
                               decoration: InputDecoration(
                                 prefixIcon: const Icon(Iconsax.user),
-                                labelText: 'context.locale.username',
+                                labelText: context.locale.username,
                                 suffixIcon:
                                     _userNameController.text.isNotEmpty
                                         ? IconButton(
@@ -151,7 +152,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               },
                               validator: (value) {
                                 if (value == null || value.isEmpty) {
-                                  return 'context.locale.requiredUsername';
+                                  return context.locale.requiredUsername;
                                 }
 
                                 return null;
@@ -185,12 +186,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                             : Iconsax.eye_slash,
                                       ),
                                     ),
-                                    labelText: 'context.locale.password',
+                                    labelText: context.locale.password,
                                   ),
                                   obscureText: _obscureText,
                                   validator: (value) {
                                     if (value == null || value.isEmpty) {
-                                      return 'context.locale.requiredPassword';
+                                      return context.locale.requiredPassword;
                                     }
 
                                     return null;
@@ -219,14 +220,14 @@ class _LoginScreenState extends State<LoginScreen> {
                                             );
                                           },
                                         ),
-                                        Text('context.locale.rememberMe'),
+                                        Text(context.locale.rememberMe),
                                       ],
                                     );
                                   },
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text('context.locale.forgotPassword'),
+                                  child: Text(context.locale.forgotPassword),
                                 ),
                               ],
                             ),
@@ -241,7 +242,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                         password: _passwordController.text));
                                   }
                                 },
-                                child: Text('context.locale.signIn'),
+                                child: Text(context.locale.signIn),
                               ),
                             ),
                             const SizedBox(height: AppSizes.spaceBtwItems),
@@ -254,7 +255,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     AppRoutes.signup,
                                   );
                                 },
-                                child: Text('context.locale.createAccount'),
+                                child: Text(context.locale.createAccount),
                               ),
                             ),
                           ],
