@@ -1,6 +1,7 @@
 import 'package:ahmoma_app/data/requests/login_request.dart';
 import 'package:ahmoma_app/modules/authentication/cubit/auth_cubit.dart';
 import 'package:ahmoma_app/modules/authentication/cubit/auth_state.dart';
+import 'package:ahmoma_app/modules/live_tracking_screen.dart';
 import 'package:ahmoma_app/utils/constants/app_sizes.dart';
 import 'package:ahmoma_app/utils/constants/enums.dart';
 import 'package:ahmoma_app/utils/constants/image_string.dart';
@@ -236,11 +237,12 @@ class _LoginScreenState extends State<LoginScreen> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 onPressed: () async {
-                                  if (_formKey.currentState!.validate()) {
-                                    _authenticationCubit.login(LoginRequest(
-                                        email: _userNameController.text,
-                                        password: _passwordController.text));
-                                  }
+                                  // if (_formKey.currentState!.validate()) {
+                                  //   _authenticationCubit.login(LoginRequest(
+                                  //       email: _userNameController.text,
+                                  //       password: _passwordController.text));
+                                  // }
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => LiveTrackingScreen()));
                                 },
                                 child: Text(context.locale.signIn),
                               ),

@@ -70,6 +70,9 @@ dependencies:
   fluttertoast: ^8.2.12
   flutter_localizations:
     sdk: flutter
+  google_maps_flutter: ^2.12.1
+  location: ^8.0.0
+  flutter_polyline_points: ^2.1.0
 
 dev_dependencies:
   flutter_test:
