@@ -27,24 +27,18 @@ class FileUtils {
       }) async {
     Permission permissionType = isUsingCamera ? Permission.camera : Permission.photos;
 
-    // Kiểm tra trạng thái quyền hiện tại
     PermissionStatus status = await permissionType.status;
 
-    // Nếu quyền chưa được yêu cầu hoặc bị từ chối tạm thời, yêu cầu lại
     if (status.isDenied || status.isRestricted || status.isLimited) {
       bool isGranted = await _requestPermission(permissionType);
       if (isGranted && context.mounted) {
-        // Quyền đã được cấp, tiến hành chọn ảnh
         return await _pickImage(context, picker, isUsingCamera, isMultiImage, imageQuality);
       } else {
-        // Nếu quyền bị từ chối vĩnh viễn, không hiện dialog lần đầu
         return null;
       }
     } else if (status.isGranted && context.mounted) {
-      // Nếu quyền đã được cấp, tiến hành chọn ảnh
       return await _pickImage(context, picker, isUsingCamera, isMultiImage, imageQuality);
     } else if (status.isPermanentlyDenied && context.mounted) {
-      // Hiển thị dialog yêu cầu mở cài đặt nếu quyền bị từ chối vĩnh viễn
       await context.showAlertDialog(
         title: "Notification",
         content: isUsingCamera

@@ -1,10 +1,10 @@
+import 'package:ahmoma_app/l10n/app_localizations.dart';
 import 'package:ahmoma_app/modules/app/cubit/my_app_cubit.dart';
 import 'package:ahmoma_app/utils/routes/app_routes.dart';
 import 'package:ahmoma_app/utils/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

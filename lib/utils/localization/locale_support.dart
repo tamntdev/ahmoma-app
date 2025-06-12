@@ -1,5 +1,5 @@
+import 'package:ahmoma_app/l10n/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 extension LocaleSupport on BuildContext {
   AppLocalizations get locale {
