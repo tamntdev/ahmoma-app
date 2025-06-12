@@ -31,8 +31,8 @@ class MyApp extends StatelessWidget {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: const [
-              // Locale('en'), // English
-              Locale('vi'), // Vietnamese
+              Locale('en'), // English
+              // Locale('vi'), // Vietnamese
             ],
             onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
           );
