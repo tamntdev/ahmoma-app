@@ -5,6 +5,7 @@ import 'package:ahmoma_app/utils/themes/widget_themes/checkbox_theme.dart';
 import 'package:ahmoma_app/utils/themes/widget_themes/chip_theme.dart';
 import 'package:ahmoma_app/utils/themes/widget_themes/elevated_button_theme.dart';
 import 'package:ahmoma_app/utils/themes/widget_themes/outlined_button_theme.dart';
+import 'package:ahmoma_app/utils/themes/widget_themes/tab_bar_theme.dart';
 import 'package:ahmoma_app/utils/themes/widget_themes/text_field_theme.dart';
 import 'package:ahmoma_app/utils/themes/widget_themes/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,7 @@ class AppTheme {
     outlinedButtonTheme: AppOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme,
     dividerColor: Colors.transparent,
+    tabBarTheme: AppTabBarTheme.lightTabBarTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -46,5 +48,6 @@ class AppTheme {
     outlinedButtonTheme: AppOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: AppTextFormFieldTheme.darkInputDecorationTheme,
     dividerColor: Colors.transparent,
+    tabBarTheme: AppTabBarTheme.darkTabBarTheme,
   );
 }

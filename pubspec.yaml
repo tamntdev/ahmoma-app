@@ -87,6 +87,8 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/icons/
+    - assets/images/logo/
 
   fonts:
     - family: BeVietNamPro

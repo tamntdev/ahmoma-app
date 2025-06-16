@@ -10,11 +10,11 @@ class AppOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: AppColors.dark,
-      side: const BorderSide(color: AppColors.borderPrimary),
+      side: const BorderSide(color: AppColors.borderButtonColor),
       textStyle: const TextStyle(
         fontSize: 16,
-        color: AppColors.black,
-        fontWeight: FontWeight.w600,
+        color: AppColors.textPrimary,
+        fontWeight: FontWeight.w700,
       ),
       padding: const EdgeInsets.symmetric(
         vertical: AppSizes.buttonHeight,
@@ -22,6 +22,7 @@ class AppOutlinedButtonTheme {
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSizes.buttonRadius),
+        side: BorderSide(width: 1, color: AppColors.borderButtonColor),
       ),
     ),
   );
@@ -30,10 +31,10 @@ class AppOutlinedButtonTheme {
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       foregroundColor: AppColors.light,
-      side: const BorderSide(color: AppColors.borderPrimary),
+      side: const BorderSide(color: AppColors.borderButtonColor),
       textStyle: const TextStyle(
         fontSize: 16,
-        color: AppColors.textWhite,
+        color: AppColors.textPrimary,
         fontWeight: FontWeight.w600,
       ),
       padding: const EdgeInsets.symmetric(
@@ -42,6 +43,7 @@ class AppOutlinedButtonTheme {
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSizes.buttonRadius),
+        side: BorderSide(width: 1, color: AppColors.borderButtonColor),
       ),
     ),
   );

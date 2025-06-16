@@ -1,7 +1,7 @@
 class AppImageStrings {
   // -- App Logos
-  static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
-  static const String lightAppLogo = "assets/logos/t-store-splash-logo-white.png";
+  static const String darkAppLogo = "assets/images/logo/logo.svg";
+  static const String lightAppLogo = "assets/images/logo/logo.svg";
 
   /// -- Default image
   static const String defaultImage = "assets/images/image_gallery.png";
@@ -31,4 +31,11 @@ class AppImageStrings {
   static const String paystack = "assets/icons/payment_methods/paystack.png";
   static const String paytm = "assets/icons/payment_methods/paytm.png";
   static const String successfulPaymentIcon = "assets/icons/payment_methods/successful_payment_icon.png";
+
+  static const String googleLogo = 'assets/images/icons/google_icon.svg';
+  static const String appleLogo = 'assets/images/icons/apple_icon.svg';
+  static const String facebookLogo = 'assets/images/icons/facebook_icon.svg';
+
+  static const String notifySuccessIcon = 'assets/images/icons/icon_notify_success.svg';
+  static const String successIcon = 'assets/images/icons/icon_success.svg';
 }

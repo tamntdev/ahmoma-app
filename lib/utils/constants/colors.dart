@@ -2,19 +2,33 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // App theme colors
-  static const Color primary = Color(0xFF146bbb);
+  static const Color primary = Color(0xFFF8981D);
+  static const Color primary1 = Color(0xFFEF3B62);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFF79a8c5);
+  static const Color bgTabBar = Color(0x1A1A1A0D);
 
   // Text colors
-  static const Color textPrimary = Color(0xFF333333);
-  static const Color textSecondary = Color(0xFF6C757D);
-  static const Color textWhite = Colors.white;
+  static const Color textPrimary = Color(0xFF1A1A1A);
+  static const Color textSecondary = Color(0x1A1A1ACC);
+  static const Color textWhite = Color(0xFFF8F8F8);
+  static const Color hintTextColor = Color(0x1A1A1A4D);
+  static const Color subTextColor = Color(0x1A1A1AB2);
+  static const Color textDialog = Color(0x1A1A1A80);
+
+  // Icon colors
+  static const Color iconPrimary = Color(0xFF1A1A1A);
+  static const Color iconSecondary = Color(0x1A1A1A4D);
+
+  // Border colors
+  static const Color borderInputColor = Color(0xFFC7C7C7);
+  static const Color borderButtonColor = Color(0xFF1A1A1A);
 
   // Background colors
   static const Color light = Color(0xFFF6F6F6);
   static const Color dark = Color(0xFF272727);
   static const Color primaryBackground = Color(0xFFF3F5FF);
+  static const Color bgCancel = Color(0x1A1A1A0D);
 
   // Background Container colors
   static const Color lightContainer = Color(0xFFF6F6F6);
